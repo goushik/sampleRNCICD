@@ -6,6 +6,9 @@
     "isolatedModules": true,
     "jsx": "react",
     "lib": ["es6", "dom", "es2020.string"],
+    "typeRoots": [     
+      "./node_modules/@types"
+    ],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,

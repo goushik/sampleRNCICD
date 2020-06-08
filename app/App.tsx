@@ -1,14 +1,12 @@
 import React from 'react';
-import {
-  Text,
-  View,
-} from 'react-native';
+import {LoginScreen} from 'screens';
+import ThemeProviderWithDimensions from './ThemeProviderWithDimensions';
 
 const App = () => {
   return (
-     <View>
-     <Text style={{marginTop:'50%',textAlign:'center'}}>Sample RNCICD </Text>
-     </View>
+    <ThemeProviderWithDimensions>
+     <LoginScreen />
+     </ThemeProviderWithDimensions>
   );
 };
 
