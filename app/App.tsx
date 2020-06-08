@@ -1,16 +1,13 @@
 import React from 'react';
-import {
-  Text,
-  View,
-} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import RootStackNavigator from 'navigation/RootStackNavigator';
 
 const App = () => {
   return (
-     <View>
-     <Text style={{marginTop:'50%',textAlign:'center'}}>Sample RNCICD </Text>
-     </View>
+    <NavigationContainer>
+      <RootStackNavigator />
+    </NavigationContainer>
   );
 };
 
 export default App;
-
