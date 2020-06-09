@@ -1,14 +1,13 @@
 import React from 'react';
-import {LoginScreen} from 'screens';
-import ThemeProviderWithDimensions from './ThemeProviderWithDimensions';
+import {NavigationContainer} from '@react-navigation/native';
+import RootStackNavigator from 'navigation/RootStackNavigator';
 
 const App = () => {
   return (
-    <ThemeProviderWithDimensions>
-     <LoginScreen />
-     </ThemeProviderWithDimensions>
+    <NavigationContainer>
+      <RootStackNavigator />
+    </NavigationContainer>
   );
 };
 
 export default App;
-

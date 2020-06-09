@@ -11,15 +11,16 @@ import {Button, ButtonType, ButtonSize} from 'components/Button/Button';
 
 const LoginScreen=()=>{
 
-    const [email,setEmail]=useState();
-    const [password,setPassword]=useState();
+    const [email,setEmail]=useState<string>();
+    const [password,setPassword]=useState<string>();
+    const [isSubmitting,setIsSubmitting]=useState<boolean>(false);
 
     const handleEmail=(email:string)=>{
        setEmail(email)
     }
     const handlePassword=(password:string)=>{
         setPassword(password)
-     }
+     } 
 
     return(
         <Container>
@@ -31,6 +32,7 @@ const LoginScreen=()=>{
            <Button
             type={ButtonType.Secondary}
             size={ButtonSize.Large}
+            disabled={!isSubmitting}
             onPress={() => {             
             }}
             text="Sign In"
